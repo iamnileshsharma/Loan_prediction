@@ -19,11 +19,11 @@ def evaluate(model, x_test, y_test):
     return accuracy
 
 
-def save_model(model, scaler, model_path='../models/model.pkl', scaler_path='../models/scaler.pkl'):
+def save_model(model, scaler, model_path='Models/model.pkl', scaler_path='Models/scaler.pkl'):
     joblib.dump(model, model_path)
     joblib.dump(scaler, scaler_path)
 
-def load_model(model_path='../models/model.pkl', scaler_path='../models/scaler.pkl'):
+def load_model(model_path='Models/model.pkl', scaler_path='Models/scaler.pkl'):
     model = joblib.load(model_path)
     scaler = joblib.load(scaler_path)
     return model, scaler

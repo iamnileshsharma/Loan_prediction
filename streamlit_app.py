@@ -7,8 +7,8 @@ import numpy as np
 from Scripts.predict import predict_loan
 
 # Load trained model and scaler
-model = joblib.load('models/model.pkl')
-scaler = joblib.load('models/scaler.pkl')
+model = joblib.load('Models/model.pkl')
+scaler = joblib.load('Models/scaler.pkl')
 
 st.title("🏦 Loan Approval Predictor")
 st.markdown("Enter applicant information below to predict loan status.")
