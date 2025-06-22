@@ -15,7 +15,6 @@ venv/
 .env/
 
 # Model and scaler files
-*.pkl
 *.joblib
 
 # Streamlit cache
